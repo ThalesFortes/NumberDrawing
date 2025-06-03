@@ -1,0 +1,29 @@
+header {
+  & span{
+    font: var(--text-overline);
+    text-transform: uppercase;
+
+    background: var(--gradient-content);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    background-clip: text;
+
+    display: inline-block;
+    margin: 6rem auto 0.8rem;
+  }
+
+  &  h1{
+    font: var(--text-4xl);
+    text-transform: uppercase;
+    max-width: 508px;
+  }
+}
+
+@media only screen and (max-width:767px) {
+  header{
+    & h1{
+      font: var(--text-2xl);
+    }
+  }
+}
