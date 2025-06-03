@@ -1,4 +1,9 @@
 nav{
+  grid-column: 1/2;
+  grid-row: 1/1;
+}
+
+#navbar{
   font: var(--text-xl);
   text-transform: uppercase;
 
@@ -29,7 +34,7 @@ nav{
 
 
 @media only screen and (max-width:767px) {
-  nav{
+  #navbar{
     justify-content: center;
   }
 

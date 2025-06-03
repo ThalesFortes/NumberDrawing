@@ -53,6 +53,10 @@ body{
 
 #app{
   margin: 5.3rem 8.4rem 9.6rem 7.5rem;
+
+  display: grid;
+  grid-auto-columns: repeat(2, 1fr);
+  grid-template-rows: 7em repeat(2,1fr);
 }
 
 
