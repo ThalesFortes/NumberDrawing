@@ -45,6 +45,10 @@
   --text-lb-sml: 500 1rem/1.5 var(--ff-base-robot-flex);
 }
 
+body{
+  background-image: url(/assets/img/bng.png);
+  background-color: #000000;
+}
 
 #app{
   margin: 5.3rem 8.4rem 9.6rem 7.5rem;
