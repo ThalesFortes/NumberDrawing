@@ -1,0 +1,27 @@
+#faq{
+ 
+
+  & .questions{
+    margin-top: 2.5rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 0.8rem;
+
+    & .question {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+
+      & span{
+         font: var(--text-md);
+         color: var(--content-brand);
+      }
+
+      & p {
+        font: var(--text-sm);
+        color: var(--content-secondary);
+      }
+    }
+    
+  }
+}
