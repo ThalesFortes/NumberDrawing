@@ -12,14 +12,14 @@
 </head>
 <body>
   <div id="app">
-    
+
     <nav>
       <img src="./assets/logo.svg" alt="logo" href="#">
       <span>numbers</span>
     </nav>
 
     <header>
-      <span class="oi">online - gratuito</span>
+      <span>online - gratuito</span>
       <h1>sorteador de números</h1>
     </header>
 
@@ -43,7 +43,47 @@
       </div>
     </section>
 
-    <section>
+    <section id="drawning">
+      <h2>quero sortear</h2>
+      <p>
+        defina o intervalo e a quantidade de números, clique em "Sortear"<br>
+        e veja os resultados na tela. É rápido e fácil!
+      </p>
+      <form action="post">
+        <labelfield class="input-wrapper">
+          <label for="quantity">números</label>
+          <input type="text" 
+                 id="quantity" 
+                 name="quantity"
+                 maxlength="1">
+        </labelfield>
+
+        <labelfield class="input-wrapper">
+          <label for="initial-value">de</label>
+          <input type="text" 
+                 id="initial-value" 
+                 name="initial-value"
+                 maxlength="1">
+        </labelfield>
+
+        <labelfield class="input-wrapper">
+          <label for="quantity">a</label>
+          <input type="text" 
+                 id="final-value" 
+                 name="final-value"
+                 maxlength="1">
+        </labelfield>
+
+        <button>
+          <img src="./assets/state=default.svg" alt="Repetir numeros permitido">
+          <span>não repetir o número</span>
+        </button>
+
+        <button type="submit">
+          sortear
+          <img src="./assets/icons/arrow.svg" alt="começar o sorteio">
+        </button>
+      </form>
 
     </section>
 
