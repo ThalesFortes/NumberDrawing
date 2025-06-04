@@ -1,64 +1,67 @@
-#drawning{
+#drawnResult {
   grid-column: 2/2;
   grid-row: 2/3;
   margin-top: 6rem;
   margin-left: 3.2rem;
 
-  & .texts{
-      padding-inline: 4rem;
-      & .subtitle{
+  & .texts {
+    padding-inline: 4rem;
+
+    & .subtitle {
       font: var(--text-lb-md);
       font-weight: 700;
       text-transform: uppercase;
       margin-bottom: 0.4rem;
     }
 
-    & .drawnInfo{
+    & .drawnInfo {
       padding-inline: 5rem;
       font: var(--text-base);
       color: var(--content-secondary);
       margin-bottom: 2.5rem;
     }
-  } 
+  }
 
-  & .result{
+  & .result {
     display: flex;
     gap: 2rem;
     padding-inline: 8rem;
-    & span.number{
+
+    & span.number {
       font: var(--text-2xl);
       color: var(--content-brand);
     }
   }
 
-  & form{
-    & .button-wrapper{
+  & form {
+    & .button-wrapper {
       margin-top: 1.5rem;
       max-width: 440px;
-      & button{
+
+      & button {
         display: flex;
         justify-content: center;
         align-items: center;
         gap: 0.7rem;
-
         background: none;
         border: none;
-        color: var(--content-primary) ;
-      } 
+        color: var(--content-primary);
+        position: relative;
+        z-index: 1;
+      }
 
-      & #submitButton{
+      & #submitButton {
         padding: 1rem;
-        border-radius: 10px;
-        background:var(--background-tertiary) ;
         width: 100%;
-
         font: var(--text-base);
         font-weight: 700;
         text-transform: uppercase;
-        transition: 500ms ease;
+        transition: transform 300ms ease;
+        cursor: pointer;
+        background: var(--background-tertiary);
+        border-radius: 10px;
 
-        &:hover{
-          cursor: pointer;
+        &:hover {
           transform: scale(1.03);
         }
       }
@@ -66,31 +69,33 @@
   }
 }
 
-
-
-@media only screen and (min-width:768px) and (max-width:1030px){
-  #drawning{
+@media only screen and (min-width:768px) and (max-width:1030px) {
+  #drawning {
     margin-left: 3rem;
-     & .texts{
-       padding-inline: 0;
-        & .subtitle{
-          font-size: 1.2rem;
-        }
-        & .drawnInfo{
+
+    & .texts {
+      padding-inline: 0;
+
+      & .subtitle {
+        font-size: 1.2rem;
+      }
+
+      & .drawnInfo {
         padding-inline: 4rem;
         font: var(--text-base);
         color: var(--content-secondary);
         margin-bottom: 2.5rem;
       }
-    }  
-    & .result{
+    }
+
+    & .result {
       justify-content: center;
       padding-inline: 0;
     }
 
-    & form{
-      & .button-wrapper{
-        & #submitButton{
+    & form {
+      & .button-wrapper {
+        & #submitButton {
           font-size: 0.9rem;
         }
       }
@@ -99,21 +104,23 @@
 }
 
 @media only screen and (max-width:767px) {
-  #drawning{
+  #drawning {
     grid-column: 1/1;
     grid-row: 3/3;
     margin-left: 0;
-     & .texts{
-       padding-inline: 0;
 
-        & .drawnInfo{
+    & .texts {
+      padding-inline: 0;
+
+      & .drawnInfo {
         padding-inline: 5rem;
         font: var(--text-base);
         color: var(--content-secondary);
         margin-bottom: 2.5rem;
       }
-    }  
-    & .result{
+    }
+
+    & .result {
       justify-content: center;
       padding-inline: 0;
     }

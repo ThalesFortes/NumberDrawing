@@ -46,7 +46,7 @@
     </section>
  
     <section id="drawning">
-     <!--
+     
       <h2 class="subtitle">quero sortear</h2>
       <p class="drawnInfo">
         defina o intervalo e a quantidade de números, clique em "Sortear"<br>
@@ -56,26 +56,32 @@
         <fieldset id="sortedInputs">
           <div class="input-wrapper">
             <label for="quantity">números</label>
+            <div class="has-gradient-border">
             <input type="text" 
                   id="quantity" 
                   name="quantity"
                   maxlength="1">
+            </div>
           </div>
 
           <div class="input-wrapper">
             <label for="initial-value">de</label>
-            <input type="text" 
-                  id="initial-value" 
-                  name="initial-value"
-                  maxlength="1">
+            <div class="has-gradient-border">
+              <input type="text" 
+                    id="initial-value" 
+                    name="initial-value"
+                    maxlength="1">
+            </div>
           </div>
 
           <div class="input-wrapper">
             <label for="quantity">a</label>
-            <input type="text" 
-                  id="final-value" 
-                  name="final-value"
-                  maxlength="1">
+            <div class="has-gradient-border">
+              <input type="text" 
+                    id="final-value" 
+                    name="final-value"
+                    maxlength="1">
+            </div>
           </div>
         </fieldset>
 
@@ -85,17 +91,17 @@
             <span>Não repetir o número</span>
           </button>
 
-          <button type="submit" id="submitButton">
+          <button type="submit" id="submitButton" class="has-gradient-border">
             <span>sortear</span>
             <img src="./assets/icons/arrow.svg" alt="começar o sorteio">
           </button>
         </div>
       </form>
     </section>
-      -->
+     
 
-    
-    <section class="drawning">
+   
+    <section id="drawnResult" class="display-none">
 
       <div class="texts">
         <h2 class="subtitle">resultado do sorteio</h2>
@@ -107,7 +113,7 @@
       </div>
       <form action="">
       <div class="button-wrapper">
-       <button type="submit" id="submitButton" class="result">
+       <button type="submit" id="submitButton" class="result has-gradient-border">
             <span>sortear novamente</span>
             <img src="./assets/icons/start.svg" alt="começar o sorteio">
         </button>
@@ -115,6 +121,7 @@
       </form>
     </section>
    
+
 
   </div>
   

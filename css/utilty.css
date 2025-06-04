@@ -1,0 +1,57 @@
+
+.has-gradient-border {
+  position: relative;
+  border-radius: 10px;
+  overflow: visible; /* para o ::before ficar visível */
+}
+
+.has-gradient-border input {
+  display: block;
+  width: 80px;
+  height: 50px;
+  background-color: var(--background-secondary);
+  border: none;
+  border-radius: 10px;
+  padding: 4px 8px;
+  font: var(--text-2xl);
+  text-align: center;
+  color: var(--content-primary);
+  position: relative;
+  z-index: 1;
+}
+
+/* Borda gradiente no ::before */
+.has-gradient-border::before {
+  content: '';
+  position: absolute;
+  top: -1.5px; left: -1.5px; right: -1.5px; bottom: -1.5px;
+  border-radius: 9px; /* um pouco maior que o input */
+  padding: 1.5px; /* largura da borda */
+  background: var(--gradient-border);
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+  opacity: 0;
+  transition: opacity 300ms ease;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.has-gradient-border:active,
+.has-gradient-border:hover::before,
+.has-gradient-border:focus-within::before {
+  opacity: 1;
+}
+
+.has-gradient-border input:focus {
+  outline: none;
+}
+
+.display-none{
+  display: none;
+}
