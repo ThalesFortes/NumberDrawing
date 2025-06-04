@@ -34,6 +34,11 @@ nav{
 
 
 @media only screen and (max-width:767px) {
+  nav {
+     grid-column: 1/1;
+     grid-row: 1/1;
+  }
+  
   #navbar{
     justify-content: center;
   }

@@ -2,11 +2,13 @@
   grid-column: 2/2;
   grid-row: 2/3;
   margin-top: 6rem;
+  margin-left: 3.2rem;
 
   & h2{
     font: var(--text-lb-md);
     font-weight: 700;
     text-transform: uppercase;
+    margin-bottom: 0.4rem;
   }
 
   & p{
@@ -75,6 +77,10 @@
           font: var(--text-sm);
           font-weight: 400;
         }
+
+        &:hover{
+          cursor: pointer;
+        }
       }
 
       & #submitButton{
@@ -88,7 +94,28 @@
         font: var(--text-base);
         font-weight: 700;
         text-transform: uppercase;
+        transition: 500ms ease;
+
+        &:hover{
+          cursor: pointer;
+          transform: scale(1.03);
+        }
       }
     }
   }
+}
+
+@media only screen and (min-width:768px) and (max-width:1023px){
+  #drawning{
+    margin-left: 3rem;
+  }
+}
+
+@media only screen and (max-width:767px) {
+  #drawning{
+    grid-column: 1/1;
+    grid-row: 3/3;
+    margin-left: 0;
+    }
+
 }

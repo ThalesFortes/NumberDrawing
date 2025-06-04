@@ -1,6 +1,7 @@
 #faq{
   grid-column: 1/1;
   grid-row: 3/3;
+  
 
   & .questions{
     margin-top: 2.5rem;
@@ -25,4 +26,12 @@
     }
     
   }
+}
+
+@media only screen and (max-width:767px) {
+  #faq{
+    grid-column: 1/1;
+    grid-row: 4/4;
+  }
+
 }
