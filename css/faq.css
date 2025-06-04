@@ -32,8 +32,6 @@
   #faq{
     grid-column: 1/1;
     grid-row: 4/4;
-
-    margin-top: 2rem;
   }
 
 }

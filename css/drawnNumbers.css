@@ -27,9 +27,19 @@
     gap: 2rem;
     padding-inline: 8rem;
 
+    & .result-number{
+      width: 50px;
+      height: 50px;
+      border-radius: 8px;
+      background: transparent;
+      animation: appear-spin 500ms linear forwards;
+      transform-origin: center;
+    }
+
     & span.number {
+      animation: show-number 500ms linear forwards;
       font: var(--text-2xl);
-      color: var(--content-brand);
+      color: transparent
     }
   }
 
@@ -69,8 +79,54 @@
   }
 }
 
+@keyframes appear-spin {
+  0% {
+    background: var(--content-brand);
+    transform: scale(0.2) rotate(0deg);
+    opacity: 0.1;
+  }
+  20% {
+    transform: scale(0.4) rotate(72deg);
+    opacity: 0.2;
+  }
+  40% {
+    transform: scale(0.6) rotate(144deg);
+    opacity: 0.4;
+  }
+  60% {
+    transform: scale(0.8) rotate(216deg);
+    opacity: 0.6;
+  }
+  80% {
+    transform: scale(0.95) rotate(288deg);
+    opacity: 0.8;
+  }
+  100% {
+    background: transparent;
+    transform: scale(1) rotate(360deg);
+    opacity: 1;
+  }
+}
+
+@keyframes show-number {
+  0% {
+    color: rgba(0, 0, 0, 0); 
+  }
+  30% {
+    color: rgba(0, 0, 0, 0.5);
+  }
+  60% {
+    color: black;
+    } 
+  100% {
+    color: var(--content-brand); /* cor final desejada */
+  }
+}
+
+
+
 @media only screen and (min-width:768px) and (max-width:1030px) {
-  #drawning {
+  #drawnResult{
     margin-left: 3rem;
 
     & .texts {
@@ -104,7 +160,7 @@
 }
 
 @media only screen and (max-width:767px) {
-  #drawning {
+  #drawnResult {
     grid-column: 1/1;
     grid-row: 3/3;
     margin-left: 0;
