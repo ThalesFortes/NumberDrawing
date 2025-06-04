@@ -52,39 +52,43 @@
         e veja os resultados na tela. É rápido e fácil!
       </p>
       <form action="post">
-        <labelfield class="input-wrapper">
-          <label for="quantity">números</label>
-          <input type="text" 
-                 id="quantity" 
-                 name="quantity"
-                 maxlength="1">
-        </labelfield>
+        <fieldset id="sortedInputs">
+          <div class="input-wrapper">
+            <label for="quantity">números</label>
+            <input type="text" 
+                  id="quantity" 
+                  name="quantity"
+                  maxlength="1">
+          </div>
 
-        <labelfield class="input-wrapper">
-          <label for="initial-value">de</label>
-          <input type="text" 
-                 id="initial-value" 
-                 name="initial-value"
-                 maxlength="1">
-        </labelfield>
+          <div class="input-wrapper">
+            <label for="initial-value">de</label>
+            <input type="text" 
+                  id="initial-value" 
+                  name="initial-value"
+                  maxlength="1">
+          </div>
 
-        <labelfield class="input-wrapper">
-          <label for="quantity">a</label>
-          <input type="text" 
-                 id="final-value" 
-                 name="final-value"
-                 maxlength="1">
-        </labelfield>
+          <div class="input-wrapper">
+            <label for="quantity">a</label>
+            <input type="text" 
+                  id="final-value" 
+                  name="final-value"
+                  maxlength="1">
+          </div>
+        </fieldset>
 
-        <button>
-          <img src="./assets/state=default.svg" alt="Repetir numeros permitido">
-          <span>não repetir o número</span>
-        </button>
+        <div class="button-wrapper">
+          <button id="repeatButton">
+            <img src="./assets/state=default.svg" alt="Repetir numeros permitido">
+            <span>Não repetir o número</span>
+          </button>
 
-        <button type="submit">
-          sortear
-          <img src="./assets/icons/arrow.svg" alt="começar o sorteio">
-        </button>
+          <button type="submit" id="submitButton">
+            <span>sortear</span>
+            <img src="./assets/icons/arrow.svg" alt="começar o sorteio">
+          </button>
+        </div>
       </form>
 
     </section>
