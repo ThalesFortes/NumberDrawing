@@ -36,8 +36,6 @@ header {
   header{
     grid-column: 1/1;
     grid-row: 2/2;
-
-
     & h1{
       font: var(--text-2xl);
     }

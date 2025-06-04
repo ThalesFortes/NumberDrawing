@@ -4,14 +4,14 @@
   margin-top: 6rem;
   margin-left: 3.2rem;
 
-  & h2{
+  & .subtitle{
     font: var(--text-lb-md);
     font-weight: 700;
     text-transform: uppercase;
     margin-bottom: 0.4rem;
   }
 
-  & p{
+  & .drawnInfo{
     font: var(--text-base);
     color: var(--content-secondary);
     margin-bottom: 2.5rem;
@@ -53,12 +53,12 @@
       }
     }
 
-    .button-wrapper{
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      gap: 2.5rem;
-      margin-top: 1.5rem;
+    & .button-wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2.5rem;
+        margin-top: 1.5rem;
 
       & button{
         display: flex;

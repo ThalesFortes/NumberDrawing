@@ -84,7 +84,8 @@ body{
   #app{
     grid-auto-columns: 1fr;
     grid-template-rows: 3rem 12.5rem repeat(2, 1fr);
-    margin: 2.75rem  2rem
+    margin: 2.75rem  2rem;
+    place-items: center;
   }
 
 }
