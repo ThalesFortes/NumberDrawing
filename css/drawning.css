@@ -105,9 +105,16 @@
         text-transform: uppercase;
         transition: 500ms ease;
 
+        img {
+          transition: 500ms ease;
+        }
+
         &:hover{
           cursor: pointer;
           transform: scale(1.03);
+          & img{
+            transform: translateX(5px);
+          }  
         }
       }
     }
