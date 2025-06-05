@@ -25,9 +25,14 @@
   content: '';
   position: absolute;
   top: -1.5px; left: -1.5px; right: -1.5px; bottom: -1.5px;
-  border-radius: 9px; /* um pouco maior que o input */
-  padding: 1.5px; /* largura da borda */
+  border-radius: 9px; 
+  padding: 1.5px; 
   background: var(--gradient-border);
+
+  background-size: 400%;
+  background-position: 0 50%;
+  animation: bg-gradient 2s ease infinite;
+
   -webkit-mask:
     linear-gradient(#fff 0 0) content-box,
     linear-gradient(#fff 0 0);
@@ -36,6 +41,7 @@
     linear-gradient(#fff 0 0) content-box,
     linear-gradient(#fff 0 0);
   mask-composite: exclude;
+
   opacity: 0;
   transition: opacity 300ms ease;
   pointer-events: none;
@@ -56,6 +62,12 @@
 
 .has-gradient-border input:focus {
   outline: none;
+}
+
+@keyframes bg-gradient {
+  50% {
+    background-position: 100% 50%;
+  }
 }
 
 .display-none{
