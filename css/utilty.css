@@ -48,10 +48,24 @@
   opacity: 1;
 }
 
+.has-gradient-border:active label,
+.has-gradient-border:hover label,
+.has-gradient-border:focus-within label {
+  color: var(--content-brand);
+}
+
 .has-gradient-border input:focus {
   outline: none;
 }
 
 .display-none{
   display: none;
+}
+
+.active{
+  color: var(--content-brand);
+}
+
+.active-input{
+  background-color: var(--background-tertiary);
 }

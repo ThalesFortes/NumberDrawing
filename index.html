@@ -9,7 +9,7 @@
   <title>Sorteador de números</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Sora:wght@100..800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/index.css">
-  <script src="./js/index.js" defer></script>
+  <script src="./js/index.js" defer type="module"></script>
 </head>
 <body>
   <div id="app">
@@ -46,7 +46,8 @@
       </div>
     </section>
  
-    <section id="drawning" class="">
+
+    <section id="drawning" class="display-none">
      
       <h2 class="subtitle">quero sortear</h2>
       <p class="drawnInfo">
@@ -76,12 +77,12 @@
           </div>
 
           <div class="input-wrapper">
-            <label for="quantity">a</label>
+            <label for="final-value">a</label>
             <div class="has-gradient-border">
               <input type="text" 
-                    id="final-value" 
-                    name="final-value"
-                    maxlength="1">
+                     id="final-value" 
+                     name="final-value"
+                     maxlength="1">
             </div>
           </div>
         </fieldset>
@@ -102,7 +103,7 @@
      
 
    
-    <section id="drawnResult" class="display-none">
+    <section id="drawnResult" class="">
 
       <div class="texts">
         <h2 class="subtitle">resultado do sorteio</h2>

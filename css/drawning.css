@@ -36,6 +36,10 @@
          font: var(--text-base);
          text-transform: uppercase;
          margin-bottom: 8px;
+
+         &:hover{
+          color: var(--content-brand);
+         }
         }
 
         & div input{
@@ -50,6 +54,9 @@
           text-align: center;
           color: var(--content-primary);
 
+          &:hover{
+            background-color: var(--background-tertiary);
+          }
         }
       }
     }
