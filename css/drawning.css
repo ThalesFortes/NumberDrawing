@@ -54,7 +54,8 @@
           text-align: center;
           color: var(--content-primary);
 
-          &:hover{
+          &:hover,
+          &:focus{
             background-color: var(--background-tertiary);
           }
         }
