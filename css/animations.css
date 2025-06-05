@@ -1,0 +1,59 @@
+/* Usado no drawnNumbers*/
+@keyframes appear-and-disappear {
+  0% {
+    background: var(--content-brand);
+    transform: scale(0.2) rotate(0deg);
+    opacity: 0;
+  }
+
+  25% {
+    transform: scale(1) rotate(360deg);
+    opacity: 1;
+    background: var(--content-brand);
+  }
+
+  70% {
+    transform: scale(1) rotate(360deg);
+    opacity: 1;
+    background: var(--content-brand);
+  }
+
+  90% {
+    transform: scale(0.2) rotate(720deg);
+    opacity: 1;
+    background: var(--content-brand);
+  }
+
+  100% {
+    transform: scale(0.2) rotate(720deg);
+    opacity: 0;
+    background: transparent;
+  }
+}
+
+
+@keyframes show-number {
+  0% {
+    color: transparent;
+  }
+  50% {
+    color: rgba(0, 0, 0, 0.5);
+  }
+  100% {
+    color: var(--content-brand);
+  }
+}
+
+
+
+
+/* Usado no drawning*/
+
+@keyframes bounceX {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(8px);
+  }
+}

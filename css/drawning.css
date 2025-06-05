@@ -105,7 +105,7 @@
         text-transform: uppercase;
         transition: 500ms ease;
 
-        img {
+        & img{
           transition: 500ms ease;
         }
 
@@ -113,7 +113,7 @@
           cursor: pointer;
           transform: scale(1.03);
           & img{
-            transform: translateX(5px);
+            animation: bounceX 0.6s infinite alternate ease-in-out;
           }  
         }
       }
