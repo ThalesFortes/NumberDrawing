@@ -83,7 +83,7 @@
         z-index: 1;
       }
 
-      & #submitButton {
+      & #reloadButton {
         padding: 1rem;
         width: 100%;
         font: var(--text-base);
