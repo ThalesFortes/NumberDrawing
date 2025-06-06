@@ -1,4 +1,4 @@
-#drawning{
+#randoming{
   grid-column: 2/2;
   grid-row: 2/3;
   margin-top: 6rem;
@@ -11,7 +11,7 @@
     margin-bottom: 0.4rem;
   }
 
-  & .drawnInfo{
+  & .randomInfo{
     font: var(--text-base);
     color: var(--content-secondary);
     margin-bottom: 2.5rem;
@@ -131,13 +131,13 @@
 }
 
 @media only screen and (min-width:768px) and (max-width:1023px){
-  #drawning{
+  #randoming{
     margin-left: 3rem;
   }
 }
 
 @media only screen and (max-width:767px) {
-  #drawning{
+  #randoming{
     grid-column: 1/1;
     grid-row: 3/3;
     margin-left: 0;

@@ -1,4 +1,4 @@
-#drawnResult {
+#randomResult {
   grid-column: 2/2;
   grid-row: 2/3;
   margin-top: 6rem;
@@ -14,7 +14,7 @@
       margin-bottom: 0.4rem;
     }
 
-    & .drawnInfo {
+    & .randomInfo {
       padding-inline: 5rem;
       font: var(--text-base);
       color: var(--content-secondary);
@@ -108,7 +108,7 @@
 
 
 @media only screen and (min-width:768px) and (max-width:1030px) {
-  #drawnResult{
+  #randomResult{
     margin-left: 3rem;
 
     & .texts {
@@ -118,7 +118,7 @@
         font-size: 1.2rem;
       }
 
-      & .drawnInfo {
+      & .randomInfo {
         padding-inline: 4rem;
         font: var(--text-base);
         color: var(--content-secondary);
@@ -142,7 +142,7 @@
 }
 
 @media only screen and (max-width:767px) {
-  #drawnResult {
+  #randomResult {
     grid-column: 1/1;
     grid-row: 3/3;
     margin-left: 0;
@@ -150,7 +150,7 @@
     & .texts {
       padding-inline: 0;
 
-      & .drawnInfo {
+      & .randomInfo {
         padding-inline: 5rem;
         font: var(--text-base);
         color: var(--content-secondary);
