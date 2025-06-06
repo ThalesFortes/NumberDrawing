@@ -1,3 +1,3 @@
-import {} from "./nav.js"
-import {} from "./inputs.js"
-import {} from "./randoming.js"
+import {initialPrograming} from "./main.js"
+
+initialPrograming()

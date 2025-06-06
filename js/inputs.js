@@ -19,7 +19,6 @@ export const formActiveStyles = (input) => {
   });
 };
 
-document.addEventListener('DOMContentLoaded', () => {
-  formActiveStyles(inputs);
-});
-
+export const styleLabels = () => {
+  formActiveStyles(inputs)
+}
