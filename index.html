@@ -47,14 +47,14 @@
     </section>
  
 
-    <section id="drawning" class="display-none">
+    <section id="drawning" class="">
      
       <h2 class="subtitle">quero sortear</h2>
       <p class="drawnInfo">
         defina o intervalo e a quantidade de números, clique em "Sortear"<br>
         e veja os resultados na tela. É rápido e fácil!
       </p>
-      <form action="post">
+      <form action="post" id="generateNumber">
         <fieldset id="sortedInputs">
           <div class="input-wrapper">
             <label for="quantity">números</label>
@@ -88,10 +88,15 @@
         </fieldset>
 
         <div class="button-wrapper">
-          <button id="repeatButton">
-            <img src="./assets/state=default.svg" alt="Repetir numeros permitido">
-            <span>Não repetir o número</span>
-          </button>
+          <div id="positionBox">
+            <input id="repeatButton"
+                  type="checkbox"
+                  checked>
+            </input>
+            <label for="repeatButton">Não repetir o número</label>
+          </div>
+           
+          
 
           <button type="submit" id="submitButton" class="has-gradient-border">
             <span>sortear</span>
@@ -103,7 +108,7 @@
      
 
    
-    <section id="drawnResult" class="">
+    <section id="drawnResult" class="display-none">
 
       <div class="texts">
         <h2 class="subtitle">resultado do sorteio</h2>

@@ -80,17 +80,26 @@
         color: var(--content-primary) ;
       } 
 
-      & #repeatButton{
-
-        & span{
-          font: var(--text-sm);
-          font-weight: 400;
-        }
-
+      & #positionBox{
+        position: relative;
+        & #repeatButton{
+          all: unset ;
+          position: absolute;
+          inset: 0;
+          flex: 0 0 1.5rem;
+          height: 25.5rem;
+          background-image: url(../assets/stateDefault.svg);
+          background-repeat: no-repeat;
         &:hover{
           cursor: pointer;
         }
       }
+      & label {
+          font: var(--text-sm);
+          font-weight: 400;
+          padding-left: 3rem;
+        }
+    }
 
       & #submitButton{
         display: flex;
