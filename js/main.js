@@ -1,9 +1,12 @@
-import { activeToggleHomePage } from "./nav.js";
-import { styleLabels } from "./inputs.js";
+import { ToggleHomePage } from "./nav.js";
+import { formActiveStyles } from "./inputs.js";
+
+const form = document.getElementById("generateNumber")
+const inputs = document.querySelectorAll('input[id]');
 
 export function initialPrograming () {
   window.onload = () => {
-    activeToggleHomePage()
-    styleLabels()
+    ToggleHomePage()
+    formActiveStyles(inputs)
   }
 }

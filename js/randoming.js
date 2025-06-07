@@ -1,13 +1,10 @@
-export const form = document.getElementById("generateNumber")
-
-export const getTheValues = () => {
-  const quantity = Number(form.elements["quantity"].value);
-  const min = Number(form.elements["initial-value"].value);
-  const max = Number(form.elements["final-value"].value);
-  const checked = form.elements["repeatButton"].checked;
+export const getTheValues = (formValues) => {
+  const quantity = Number(formValues.elements["quantity"].value);
+  const min = Number(formValues.elements["initial-value"].value);
+  const max = Number(formValues.elements["final-value"].value);
+  const checked = formValues.elements["repeatButton"].checked;
   return {quantity, min , max, checked}
 }
-
 
 export function generateNumberRandom(values){
   const range = values.max - values.min + 1
@@ -20,9 +17,9 @@ export function generateNumberRandom(values){
     const result = []
     console.log("Repetindo")
     while(result.length < values.quantity){
-      const array = new Uint32Array(1)
-      crypto.getRandomValues(array)
-      const number = values.min + (array[0] % range)
+      const array = new Uint32Array(1) // Cria array com 1 número de 32 bits
+      crypto.getRandomValues(array)    // Prenche array com um número aleatório seguro
+      const number = values.min + (array[0] % range)    /* % intervalo pega resto da divisão e garante que fique dentro do intervalo permitido. Depois soma para nunca ficar abaixo do menor valor */
       result.push(number);
     }
     return result
@@ -38,14 +35,3 @@ export function generateNumberRandom(values){
       return Array.from(result);
   }
 }
-
-
-
-  /*if (!values.checked || values.quantity > range){
-    throw new Error("Intervalo pequeno demais para gerar valors únicos.")  // Estrutura que não aceita valores repetidos
-  }*/
-
-  /*const array = new Uint32Array(1) // Cria array com 1 número de 32 bits
-  crypto.getRandomValues(array) // Prenche array com um número aleatório seguro
-  const number = values.min +(array[0] % range)
-  // % intervalo pega o resto da divisão e garante que o número fique dentro do intervalo permitido. Depois somar min para ele nunca ficar abaixo do menor valor.*/

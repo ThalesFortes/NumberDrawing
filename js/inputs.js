@@ -1,9 +1,9 @@
-const inputs = document.querySelectorAll('input[id]');
+const checkedInput = document.getElementById("")
+const resultText = document.getElementById("resultText")
 
 export const formActiveStyles = (input) => {
   const inputs = input
   inputs.forEach(input => {
-    console.log(input)
     const id = input.id;
     const label = document.querySelector(`label[for="${id}"]`);
 
@@ -18,7 +18,3 @@ export const formActiveStyles = (input) => {
     }
   });
 };
-
-export const styleLabels = () => {
-  formActiveStyles(inputs)
-}

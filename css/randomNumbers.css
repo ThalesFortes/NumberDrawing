@@ -19,6 +19,7 @@
       font: var(--text-base);
       color: var(--content-secondary);
       margin-bottom: 2.5rem;
+      text-transform: uppercase;
     }
   }
 
@@ -50,7 +51,7 @@
       z-index: 0;
 
       &.animation-box{
-        animation: appear-and-disappear 7s ease-in-out forwards;
+        animation: appear-and-disappear 3s ease-in-out forwards;
       }
     }
 
@@ -61,7 +62,7 @@
       color: transparent;
 
       &.animation-number{
-        animation: show-number 6s ease-in-out 1s forwards;
+        animation: show-number 3s ease-in-out 1s forwards;
       }
     }
   }

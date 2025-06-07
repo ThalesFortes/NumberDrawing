@@ -9,10 +9,11 @@
   <title>Sorteador de números</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Sora:wght@100..800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/index.css">
-
     
   <script src="./js/index.js" type="module" defer></script>
+
 </head>
+
 <body>
   <div id="app">
 
@@ -49,7 +50,7 @@
     </section>
  
 
-    <section id="randoming" class="display-none">
+    <section id="randoming" class="">
      
       <h2 class="subtitle">quero sortear</h2>
       <p class="randomInfo">
@@ -108,24 +109,18 @@
      
 
    
-    <section id="randomResult" class="">
+    <section id="randomResult" class="display-none">
 
-      <div class="texts">
+      <div class="texts"  id="resultText">
         <h2 class="subtitle">resultado do sorteio</h2>
-        <p class="randomInfo center">1 RESULTADO</p>
+    
       </div>
-      <div class="result">
-        <div class="result-number">
-          <div class="circle-bg animation-box"></div>
-          <span class="number animation-number">23</span>
-        </div>
-        <div class="result-number">
-          <div class="circle-bg animation-box"></div>
-          <span class="number animation-number">12</span>
-        </div>    
+  
+      <div class="result" id="responses">
+ 
       </div>
 
-      <form>
+      <form id="reloadForm">
       <div class="button-wrapper">
        <button type="submit" id="reloadButton" class="result has-gradient-border">
             <span>sortear novamente</span>
