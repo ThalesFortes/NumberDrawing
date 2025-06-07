@@ -1,15 +1,17 @@
 import { ToggleHomePage } from "./nav.js";
-import { formActiveStyles, toggleChangeRepeat } from "./inputs.js";
+import { formActiveStyles, toggleChangeRepeat, entryOnlyNumbers  } from "./inputs.js";
 import { repeatFunction, generateResult } from "./randomResult.js";
 import {getTheValues , generateNumberRandom} from "./randoming.js"
 
 const form = document.getElementById("generateNumber")
 const inputs = document.querySelectorAll('input[id]');
+const inputsEntry = document.getElementById('quantity');
+
 let inputValues = ""
 let count = 0
 
-
 export function initialPrograming () {
+    entryOnlyNumbers(inputsEntry)
     ToggleHomePage()
     formActiveStyles(inputs)
     toggleChangeRepeat()

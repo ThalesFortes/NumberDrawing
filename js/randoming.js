@@ -1,5 +1,3 @@
-
-
 export const getTheValues = (formValues) => {
   const quantity = Number(formValues.elements["quantity"].value);
   const min = Number(formValues.elements["initial-value"].value);

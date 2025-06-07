@@ -1,5 +1,11 @@
 const checkedInput = document.getElementById("repeatButton")
 
+export const entryOnlyNumbers = (inputsEntry) =>{
+  inputsEntry.addEventListener("input", () => {
+     inputsEntry.value = inputsEntry.value.replace(/\D/g,"")
+  })
+}
+
 export const formActiveStyles = (input) => {
   const inputs = input
   inputs.forEach(input => {
