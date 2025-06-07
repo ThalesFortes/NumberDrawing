@@ -47,15 +47,12 @@ export const countGeneratesResult = (counter) => {
 export const repeatFunction = (generateNew) => {
   reloadButton.addEventListener("click", async (event) => {
     event.preventDefault();
-
     reloadButton.disabled = true;
-
     try {
       await generateNew();
     } catch (error) {
       console.error("Erro ao executar a função:", error);
     }
-
     reloadButton.disabled = false;
   });
 };

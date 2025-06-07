@@ -13,7 +13,13 @@ export function initialPrograming () {
     ToggleHomePage()
     formActiveStyles(inputs)
     toggleChangeRepeat()
-    
+    repeatFunction(async () => {
+      const newResult = generateNumberRandom(inputValues);
+      count = generateResult(newResult, count);
+      let totalDelay = newResult.length * 1500 + 1500; 
+      console.log(totalDelay)
+      await new Promise(resolve => setTimeout(resolve, totalDelay));
+    })
 }
 
 
@@ -27,14 +33,7 @@ export const formSubmitFunction = () =>{
   })
 }
 
-repeatFunction(async () => {
-  const newResult = generateNumberRandom(inputValues);
-  count = generateResult(newResult, count);
-  let totalDelay = newResult.length * 1500 + 1500; 
-  console.log(totalDelay)
-  await new Promise(resolve => setTimeout(resolve, totalDelay));
-;
-})
+
       
 
 
