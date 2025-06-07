@@ -15,7 +15,6 @@ export function generateNumberRandom(values){
 
   if(!values.checked){
     const result = []
-    console.log("Repetindo")
     while(result.length < values.quantity){
       const array = new Uint32Array(1) // Cria array com 1 número de 32 bits
       crypto.getRandomValues(array)    // Prenche array com um número aleatório seguro
@@ -25,7 +24,6 @@ export function generateNumberRandom(values){
     return result
   } else {
     const result = new Set() 
-    console.log("Numeros Unicos")
     while(result.size < values.quantity){
       const array = new Uint32Array(1)
       crypto.getRandomValues(array)
