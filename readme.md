@@ -15,14 +15,20 @@
      <a href="">📱 Visit this Project</a>
 </p>
 
-<h2 id="layout">🎨 Layout</h2>
+<h2 id="layout">🎨 Layout Web</h2>
 
 <p align="center">
       <img src="./assets/printsReadme/homePageDesktop.png" alt="Imagem da pagina demonstrando como ela e" width="400px" height=300px">
-      <img src="./assets/printsReadme/homePageDesktop.png" alt="Imagem da pagina demonstrando como ela e" width="400px" height=300px">
-      <img src="./assets/printsReadme/homePageDesktop.png" alt="Imagem da pagina demonstrando como ela e" width="400px" height=300px">
-      <img src="./assets/printsReadme/homePageDesktop.png" alt="Imagem da pagina demonstrando como ela e" width="400px" height=300px">
-      <img src="./assets/printsReadme/homePageDesktop.png" alt="Imagem da pagina demonstrando como ela e" width="400px" height=300px">
+      <img src="./assets/printsReadme/resultPageDesktop.png" alt="Imagem da pagina demonstrando como ela e" width="400px" height=300px">
+</p>
+
+<h2 id="layout">🎨 Layout Mobile</h2>
+
+<p align="center">
+      <img src="./assets/printsReadme/homePageMobile0.png" alt="Imagem da pagina demonstrando como ela e" width="400px" height=300px">
+      <img src="./assets/printsReadme/homePageMobile1.png" alt="Imagem da pagina demonstrando como ela e" width="400px" height=300px">
+      <img src="./assets/printsReadme/resultPageMobile0.png" alt="Imagem da pagina demonstrando como ela e" width="400px" height=300px">
+      <img src="./assets/printsReadme/resultPageMobile1.png" alt="Imagem da pagina demonstrando como ela e" width="400px" height=300px">
 </p>
 
 <h2 id="tech">💻 Technologies</h2>
