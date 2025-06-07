@@ -16,7 +16,7 @@
 
 <body>
   <div id="app">
-
+    
     <nav>
       <div id="navbar">
         <img src="./assets/logo.svg" alt="logo" href="#">
@@ -49,9 +49,7 @@
       </div>
     </section>
  
-
     <section id="randoming" class="">
-     
       <h2 class="subtitle">quero sortear</h2>
       <p class="randomInfo">
         defina o intervalo e a quantidade de números, clique em "Sortear"<br>
@@ -92,13 +90,11 @@
           <div id="positionBox">
             <input id="repeatButton"
                   type="checkbox"
-                  checked>
-            </input>
+                  aria-label="Escolher se repete ou não o numero"
+                  >
             <label for="repeatButton">Não repetir o número</label>
           </div>
-           
-          
-
+        
           <button type="submit" id="submitButton" class="has-gradient-border">
             <span>sortear</span>
             <img src="./assets/icons/arrow.svg" alt="começar o sorteio">
@@ -106,18 +102,13 @@
         </div>
       </form>
     </section>
-     
-
-   
+       
     <section id="randomResult" class="display-none">
-
       <div class="texts"  id="resultText">
         <h2 class="subtitle">resultado do sorteio</h2>
-    
       </div>
   
       <div class="result" id="responses">
- 
       </div>
 
       <form id="reloadForm">
@@ -129,11 +120,6 @@
       </div>
       </form>
     </section>
-
-   
-
-
   </div>
-
 </body>
 </html>

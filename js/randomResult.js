@@ -29,12 +29,6 @@ export function generateResult (numbers, count) {
   return count
 }
 
-export const repeatFunction = (generateNew) => {
-  reloadButton.addEventListener("click", (event) => {
-  event.preventDefault()
-  generateNew()
-  })
-}
 
 export const countGeneratesResult = (counter) => {
   const resultText = document.getElementById("resultText")
@@ -45,5 +39,43 @@ export const countGeneratesResult = (counter) => {
     p.classList.add("randomInfo")
     resultText.appendChild(p)
   }
-  p.textContent = (counter > 1) ? `${counter}º Resultados` : `${counter}º Resultado`
+  p.textContent = `${counter}º Resultado`
 }
+
+
+
+export const repeatFunction = (generateNew) => {
+  reloadButton.addEventListener("click", async (event) => {
+    event.preventDefault();
+
+    reloadButton.disabled = true;
+
+    try {
+      await generateNew();
+    } catch (error) {
+      console.error("Erro ao executar a função:", error);
+    }
+
+    reloadButton.disabled = false;
+  });
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
