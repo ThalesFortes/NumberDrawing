@@ -82,8 +82,8 @@
 
       & #positionBox{
         position: relative;
+
         & #repeatButton{
-          all: unset ;
           position: absolute;
           inset: 0;
           flex: 0 0 1.5rem;
@@ -92,6 +92,13 @@
           background-repeat: no-repeat;
         &:hover{
           cursor: pointer;
+        }
+        &:focus {
+          outline: 2px solid #000;
+          outline-offset: 2px;
+        }
+        &[aria-label] {
+
         }
       }
       & label {

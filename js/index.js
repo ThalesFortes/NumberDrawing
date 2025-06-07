@@ -1,6 +1,7 @@
 import {initialPrograming} from "./main.js"
 import {getTheValues , generateNumberRandom} from "./randoming.js"
 import { generateResult , repeatFunction} from "./randomResult.js"
+import {toggleChangeRepeat} from "./inputs.js"
 
 initialPrograming()
 
@@ -24,6 +25,8 @@ repeatFunction(() =>{
   const newResult = generateNumberRandom(guarda)
   count = generateResult(newResult, count)
 })
+
+toggleChangeRepeat()
 
 
 /*      <div class="texts">

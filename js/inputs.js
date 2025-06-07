@@ -1,5 +1,4 @@
-const checkedInput = document.getElementById("")
-const resultText = document.getElementById("resultText")
+const checkedInput = document.getElementById("repeatButton")
 
 export const formActiveStyles = (input) => {
   const inputs = input
@@ -18,3 +17,13 @@ export const formActiveStyles = (input) => {
     }
   });
 };
+
+export function toggleChangeRepeat () {
+  checkedInput.addEventListener("change",() => {
+    if (checkedInput.checked) {
+      checkedInput.style.backgroundImage = 'url(../assets/stateActive.svg)';
+    } else {
+      checkedInput.style.backgroundImage = 'url(../assets/stateDefault.svg)';
+    }
+  })
+}
